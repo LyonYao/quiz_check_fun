@@ -1,0 +1,101 @@
+[
+  [
+    {
+      "question_number": "1",
+      "question_description": "The JencoMart security team requires that all Google Cloud Platform infrastructure is deployed using a least privilege model  with separation of duties for administration between production and development resources.   What Google domain and project structure should you recommend?",
+      "options": {
+        "A": "Create two G Suite accounts to manage users: one for development/test/staging and one for production. Each account  should contain one project for every application",
+        "B": "Create two G Suite accounts to manage users: one with a single project for all development applications and one with a  single project for all production applications",
+        "C": "Create a single G Suite account to manage users with each stage of each application in its own project   Most Voted",
+        "D": "Create a single G Suite account to manage users with one project for the development/test/staging environment and  one project for the production environment"
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "2",
+      "question_description": "A few days after JencoMart migrates the user credentials database to Google Cloud Platform and shuts down the old server,  the new database server stops responding to SSH connections. It is still serving database requests to the application servers  correctly.   What three steps should you take to diagnose the problem? (Choose three.)",
+      "options": {
+        "A": "Delete the virtual machine (VM) and disks and create a new one",
+        "B": "Delete the instance, attach the disk to a new VM, and investigate",
+        "C": "Take a snapshot of the disk and connect to a new machine to investigate   Most Voted",
+        "D": "Check inbound firewall rules for the network the machine is connected to   Most Voted",
+        "E": "Connect the machine to another network with very simple firewall rules and investigate",
+        "F": "Print the Serial Console output for the instance for troubleshooting, activate the interactive console, and investigate  Most Voted"
+      },
+      "correct_answer": [
+        "C",
+        "D",
+        "F"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "3",
+      "question_description": "JencoMart has decided to migrate user profile storage to Google Cloud Datastore and the application servers to Google  Compute Engine (GCE). During the migration, the existing infrastructure will need access to Datastore to upload the data.   What service account key-management strategy should you recommend?",
+      "options": {
+        "A": "Provision service account keys for the on-premises infrastructure and for the GCE virtual machines (VMs)",
+        "B": "Authenticate the on-premises infrastructure with a user account and provision service account keys for the VMs",
+        "C": "Provision service account keys for the on-premises infrastructure and use Google Cloud Platform (GCP) managed keys  for the VMs   Most Voted",
+        "D": "Deploy a custom authentication service on GCE/Google Kubernetes Engine (GKE) for the on-premises infrastructure and  use GCP managed keys for the VMs"
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "4",
+      "question_description": "JencoMart has built a version of their application on Google Cloud Platform that serves traffic to Asia. You want to measure  success against their business and technical goals.   Which metrics should you track?",
+      "options": {
+        "A": "Error rates for requests from Asia",
+        "B": "Latency difference between US and Asia",
+        "C": "Total visits, error rates, and latency from Asia   Most Voted",
+        "D": "Total visits and average latency for users from Asia",
+        "E": "The number of character sets present in the database"
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "5",
+      "question_description": "The migration of JencoMart's application to Google Cloud Platform (GCP) is progressing too slowly. The infrastructure is shown  in the diagram. You want to maximize throughput.   What are three potential bottlenecks? (Choose three.)",
+      "options": {
+        "A": "A single VPN tunnel, which limits throughput   Most Voted",
+        "B": "A tier of Google Cloud Storage that is not suited for this task",
+        "C": "A copy command that is not suited to operate over long distances   Most Voted",
+        "D": "Fewer virtual machines (VMs) in GCP than on-premises machines",
+        "E": "A separate storage layer outside the VMs, which is not suited for this task",
+        "F": "Complicated internet connectivity between the on-premises infrastructure and GCP   Most Voted"
+      },
+      "correct_answer": [
+        "A",
+        "C",
+        "F"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "6",
+      "question_description": "JencoMart wants to move their User Profiles database to Google Cloud Platform.   Which Google Database should they use?",
+      "options": {
+        "A": "Cloud Spanner",
+        "B": "Google BigQuery",
+        "C": "Google Cloud SQL",
+        "D": "Google Cloud Datastore   Most Voted"
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ]
+]

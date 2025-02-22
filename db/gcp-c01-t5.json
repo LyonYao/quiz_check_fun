@@ -1,0 +1,93 @@
+[
+  [
+    {
+      "question_number": "1",
+      "question_description": "Mountkirk Games wants you to design their new testing strategy. How should the test coverage differ from their existing  backends on the other platforms?",
+      "options": {
+        "A": "Tests should scale well beyond the prior approaches   Most Voted",
+        "B": "Unit tests are no longer required, only end-to-end tests",
+        "C": "Tests should be applied after the release is in the production environment",
+        "D": "Tests should include directly testing the Google Cloud Platform (GCP) infrastructure"
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "2",
+      "question_description": "Mountkirk Games has deployed their new backend on Google Cloud Platform (GCP). You want to create a through testing  process for new versions of the backend before they are released to the public. You want the testing environment to scale in  an economical way. How should you design the process?",
+      "options": {
+        "A": "Create a scalable environment in GCP for simulating production load   Most Voted",
+        "B": "Use the existing infrastructure to test the GCP-based backend at scale",
+        "C": "Build stress tests into each component of your application using resources internal to GCP to simulate load",
+        "D": "Create a set of static environments in GCP to test different levels of load   ג   \"€for example, high, medium, and low"
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "3",
+      "question_description": "Mountkirk Games wants to set up a continuous delivery pipeline. Their architecture includes many small services that they  want to be able to update and roll back quickly. Mountkirk Games has the following requirements:   \u0000 Services are deployed redundantly across multiple regions in the US and Europe   \u0000 Only frontend services are exposed on the public internet   \u0000 They can provide a single frontend IP for their fleet of services   \u0000 Deployment artifacts are immutable   Which set of products should they use?",
+      "options": {
+        "A": "Google Cloud Storage, Google Cloud Dataflow, Google Compute Engine",
+        "B": "Google Cloud Storage, Google App Engine, Google Network Load Balancer",
+        "C": "Google Kubernetes Registry, Google Container Engine, Google HTTP(S) Load Balancer   Most Voted",
+        "D": "Google Cloud Functions, Google Cloud Pub/Sub, Google Cloud Deployment Manager"
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "4",
+      "question_description": "Mountkirk Games' gaming servers are not automatically scaling properly. Last month, they rolled out a new feature, which  suddenly became very popular. A record number of users are trying to use the service, but many of them are getting 503 errors  and very slow response times. What should they investigate first?",
+      "options": {
+        "A": "Verify that the database is online",
+        "B": "Verify that the project quota hasn't been exceeded",
+        "C": "Verify that the new feature code did not introduce any performance bugs   Most Voted",
+        "D": "Verify that the load-testing team is not running their tool against production"
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "5",
+      "question_description": "Mountkirk Games needs to create a repeatable and configurable mechanism for deploying isolated application environments.  Developers and testers can access each other's environments and resources, but they cannot access staging or production  resources. The staging environment needs access to some services from production.   What should you do to isolate development environments from staging and production?",
+      "options": {
+        "A": "Create a project for development and test and another for staging and production",
+        "B": "Create a network for development and test and another for staging and production",
+        "C": "Create one subnetwork for development and another for staging and production",
+        "D": "Create one project for development, a second for staging and a third for production   Most Voted"
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "6",
+      "question_description": "Mountkirk Games wants to set up a real-time analytics platform for their new game. The new platform must meet their  technical requirements.   Which combination of Google technologies will meet all of their requirements?",
+      "options": {
+        "A": "Kubernetes Engine, Cloud Pub/Sub, and Cloud SQL",
+        "B": "Cloud Dataflow, Cloud Storage, Cloud Pub/Sub, and BigQuery   Most Voted",
+        "C": "Cloud SQL, Cloud Storage, Cloud Pub/Sub, and Cloud Dataflow",
+        "D": "Cloud Dataproc, Cloud Pub/Sub, Cloud SQL, and Cloud Dataflow",
+        "E": "Cloud Pub/Sub, Compute Engine, Cloud Storage, and Cloud Dataproc"
+      },
+      "correct_answer": [
+        "B"
+      ]
+    }
+  ]
+]

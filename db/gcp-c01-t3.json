@@ -1,0 +1,93 @@
+[
+  [
+    {
+      "question_number": "1",
+      "question_description": "For this question, refer to the Helicopter Racing League (HRL) case study. Your team is in charge of creating a payment card  data vault for card numbers used to bill tens of thousands of viewers, merchandise consumers, and season ticket holders. You  need to implement a custom card tokenization service that meets the following requirements:   *   It must provide low latency at minimal cost.   *   It must be able to identify duplicate credit cards and must not store plaintext card numbers.   *   It should support annual key rotation.   Which storage approach should you adopt for your tokenization service?",
+      "options": {
+        "A": "Store the card data in Secret Manager after running a query to identify duplicates.",
+        "B": "Encrypt the card data with a deterministic algorithm stored in Firestore using Datastore mode.   Most Voted",
+        "C": "Encrypt the card data with a deterministic algorithm and shard it across multiple Memorystore instances.",
+        "D": "Use column-level encryption to store the data in Cloud SQL."
+      },
+      "correct_answer": [
+        "B"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "2",
+      "question_description": "For this question, refer to the Helicopter Racing League (HRL) case study. Recently HRL started a new regional racing league  in Cape Town, South Africa. In an effort to give customers in Cape Town a better user experience, HRL has partnered with the  Content Delivery Network provider, Fastly. HRL needs to allow traffic coming from all of the Fastly IP address ranges into their  Virtual Private Cloud network (VPC network). You are a member of the HRL security team and you need to configure the update  that will allow only the Fastly IP address ranges through the External HTTP(S) load balancer. Which command should you use?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "3",
+      "question_description": "For this question, refer to the Helicopter Racing League (HRL) case study. The HRL development team releases a new version  of their predictive capability application every Tuesday evening at 3 a.m. UTC to a repository. The security team at HRL has  developed an in-house penetration test Cloud Function called   Airwolf. The security team wants to run Airwolf against the predictive capability application as soon as it is released every  Tuesday. You need to set up Airwolf to run at the recurring weekly cadence. What should you do?",
+      "options": {
+        "A": "Set up Cloud Tasks and a Cloud Storage bucket that triggers a Cloud Function.",
+        "B": "Set up a Cloud Logging sink and a Cloud Storage bucket that triggers a Cloud Function.",
+        "C": "Configure the deployment job to notify a Pub/Sub queue that triggers a Cloud Function.   Most Voted",
+        "D": "Set up Identity and Access Management (IAM) and Confidential Computing to trigger a Cloud Function."
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "4",
+      "question_description": "For this question, refer to the Helicopter Racing League (HRL) case study. HRL wants better prediction accuracy from their ML  prediction models. They want you to use Google's AI Platform so HRL can understand and interpret the predictions. What  should you do?",
+      "options": {
+        "A": "Use Explainable AI.   Most Voted",
+        "B": "Use Vision AI.",
+        "C": "Use Google Cloud's operations suite.",
+        "D": "Use Jupyter Notebooks."
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "5",
+      "question_description": "For this question, refer to the Helicopter Racing League (HRL) case study. HRL is looking for a cost-effective approach for  storing their race data such as telemetry. They want to keep all historical records, train models using only the previous  season's data, and plan for data growth in terms of volume and information collected. You need to propose a data solution.  Considering HRL business requirements and the goals expressed by CEO S. Hawke, what should you do?",
+      "options": {
+        "S": "Hawke, what should you do?",
+        "A": "Use Firestore for its scalable and flexible document-based database. Use collections to aggregate race data by season  and event.",
+        "B": "Use Cloud Spanner for its scalability and ability to version schemas with zero downtime. Split race data using season as  a primary key.",
+        "C": "Use BigQuery for its scalability and ability to add columns to a schema. Partition race data based on season.   Most Voted",
+        "D": "Use Cloud SQL for its ability to automatically manage storage increases and compatibility with MySQL. Use separate  database instances for each season."
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "6",
+      "question_description": "For this question, refer to the Helicopter Racing League (HRL) case study. A recent finance audit of cloud infrastructure noted  an exceptionally high number of   Compute Engine instances are allocated to do video encoding and transcoding. You suspect that these Virtual Machines are  zombie machines that were not deleted after their workloads completed. You need to quickly get a list of which VM instances  are idle. What should you do?",
+      "options": {
+        "A": "Log into each Compute Engine instance and collect disk, CPU, memory, and network usage statistics for analysis.",
+        "B": "Use the gcloud compute instances list to list the virtual machine instances that have the idle: true label set.",
+        "C": "Use the gcloud recommender command to list the idle virtual machine instances.   Most Voted",
+        "D": "From the Google Console, identify which Compute Engine instances in the managed instance groups are no longer  responding to health check probes."
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ]
+]
