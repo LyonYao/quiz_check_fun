@@ -5,7 +5,7 @@
       "question_description": "For this question, refer to the Helicopter Racing League (HRL) case study. Your team is in charge of creating a payment card  data vault for card numbers used to bill tens of thousands of viewers, merchandise consumers, and season ticket holders. You  need to implement a custom card tokenization service that meets the following requirements:   *   It must provide low latency at minimal cost.   *   It must be able to identify duplicate credit cards and must not store plaintext card numbers.   *   It should support annual key rotation.   Which storage approach should you adopt for your tokenization service?",
       "options": {
         "A": "Store the card data in Secret Manager after running a query to identify duplicates.",
-        "B": "Encrypt the card data with a deterministic algorithm stored in Firestore using Datastore mode.   Most Voted",
+        "B": "Encrypt the card data with a deterministic algorithm stored in Firestore using Datastore mode.",
         "C": "Encrypt the card data with a deterministic algorithm and shard it across multiple Memorystore instances.",
         "D": "Use column-level encryption to store the data in Cloud SQL."
       },
@@ -36,7 +36,7 @@
       "options": {
         "A": "Set up Cloud Tasks and a Cloud Storage bucket that triggers a Cloud Function.",
         "B": "Set up a Cloud Logging sink and a Cloud Storage bucket that triggers a Cloud Function.",
-        "C": "Configure the deployment job to notify a Pub/Sub queue that triggers a Cloud Function.   Most Voted",
+        "C": "Configure the deployment job to notify a Pub/Sub queue that triggers a Cloud Function.",
         "D": "Set up Identity and Access Management (IAM) and Confidential Computing to trigger a Cloud Function."
       },
       "correct_answer": [
@@ -49,7 +49,7 @@
       "question_number": "4",
       "question_description": "For this question, refer to the Helicopter Racing League (HRL) case study. HRL wants better prediction accuracy from their ML  prediction models. They want you to use Google's AI Platform so HRL can understand and interpret the predictions. What  should you do?",
       "options": {
-        "A": "Use Explainable AI.   Most Voted",
+        "A": "Use Explainable AI.",
         "B": "Use Vision AI.",
         "C": "Use Google Cloud's operations suite.",
         "D": "Use Jupyter Notebooks."
@@ -67,7 +67,7 @@
         "S": "Hawke, what should you do?",
         "A": "Use Firestore for its scalable and flexible document-based database. Use collections to aggregate race data by season  and event.",
         "B": "Use Cloud Spanner for its scalability and ability to version schemas with zero downtime. Split race data using season as  a primary key.",
-        "C": "Use BigQuery for its scalability and ability to add columns to a schema. Partition race data based on season.   Most Voted",
+        "C": "Use BigQuery for its scalability and ability to add columns to a schema. Partition race data based on season.",
         "D": "Use Cloud SQL for its ability to automatically manage storage increases and compatibility with MySQL. Use separate  database instances for each season."
       },
       "correct_answer": [
@@ -82,7 +82,7 @@
       "options": {
         "A": "Log into each Compute Engine instance and collect disk, CPU, memory, and network usage statistics for analysis.",
         "B": "Use the gcloud compute instances list to list the virtual machine instances that have the idle: true label set.",
-        "C": "Use the gcloud recommender command to list the idle virtual machine instances.   Most Voted",
+        "C": "Use the gcloud recommender command to list the idle virtual machine instances.",
         "D": "From the Google Console, identify which Compute Engine instances in the managed instance groups are no longer  responding to health check probes."
       },
       "correct_answer": [

@@ -1,0 +1,171 @@
+[
+  [
+    {
+      "question_number": "1",
+      "question_description": "TerramEarth's CTO wants to use the raw data from connected vehicles to help identify approximately when a vehicle in the  field will have a catastrophic failure.   You want to allow analysts to centrally query the vehicle data.   Which architecture should you recommend?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "2",
+      "question_description": "The TerramEarth development team wants to create an API to meet the company's business requirements. You want the  development team to focus their development effort on business value versus creating a custom framework.   Which method should they use?",
+      "options": {
+        "A": "Use Google App Engine with Google Cloud Endpoints. Focus on an API for dealers and partners  ",
+        "B": "Use Google App Engine with a JAX-RS Jersey Java-based framework. Focus on an API for the public",
+        "C": "Use Google App Engine with the Swagger (Open API Specification) framework. Focus on an API for the public",
+        "D": "Use Google Container Engine with a Django Python container. Focus on an API for the public",
+        "E": "Use Google Container Engine with a Tomcat container with the Swagger (Open API Specification) framework. Focus on an  API for dealers and partners"
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "3",
+      "question_description": "Your development team has created a structured API to retrieve vehicle data. They want to allow third parties to develop tools  for dealerships that use this vehicle event data. You want to support delegated authorization against this data.   What should you do?",
+      "options": {
+        "A": "Build or leverage an OAuth-compatible access control system  ",
+        "B": "Build SAML 2.0 SSO compatibility into your authentication system",
+        "C": "Restrict data access based on the source IP address of the partner systems",
+        "D": "Create secondary credentials for each dealer that can be given to the trusted third party"
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "4",
+      "question_description": "TerramEarth plans to connect all 20 million vehicles in the field to the cloud. This increases the volume to 20 million 600 byte  records a second for 40 TB an hour.   How should you design the data ingestion?",
+      "options": {
+        "A": "Vehicles write data directly to GCS",
+        "B": "Vehicles write data directly to Google Cloud Pub/Sub  ",
+        "C": "Vehicles stream data directly to Google BigQuery",
+        "D": "Vehicles continue to write data using the existing system (FTP)"
+      },
+      "correct_answer": [
+        "B"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "5",
+      "question_description": "You analyzed TerramEarth's business requirement to reduce downtime, and found that they can achieve a majority of time  saving by reducing customer's wait time for parts. You decided to focus on reduction of the 3 weeks aggregate reporting time.   Which modifications to the company's processes should you recommend?",
+      "options": {
+        "A": "Migrate from CSV to binary format, migrate from FTP to SFTP transport, and develop machine learning analysis of  metrics",
+        "B": "Migrate from FTP to streaming transport, migrate from CSV to binary format, and develop machine learning analysis of  metrics",
+        "C": "Increase fleet cellular connectivity to 80%, migrate from FTP to streaming transport, and develop machine learning  analysis of metrics  ",
+        "D": "Migrate from FTP to SFTP transport, develop machine learning analysis of metrics, and increase dealer local inventory  by a fixed factor"
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "6",
+      "question_description": "Which of TerramEarth's legacy enterprise processes will experience significant change as a result of increased Google Cloud  Platform adoption?",
+      "options": {
+        "A": "Opex/capex allocation, LAN changes, capacity planning",
+        "B": "Capacity planning, TCO calculations, opex/capex allocation  ",
+        "C": "Capacity planning, utilization measurement, data center expansion",
+        "D": "Data Center expansion, TCO calculations, utilization measurement"
+      },
+      "correct_answer": [
+        "B"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "7",
+      "question_description": "To speed up data retrieval, more vehicles will be upgraded to cellular connections and be able to transmit data to the ETL  process. The current FTP process is error-prone and restarts the data transfer from the start of the file when connections fail,  which happens often. You want to improve the reliability of the solution and minimize data transfer time on the cellular  connections.   What should you do?",
+      "options": {
+        "A": "Use one Google Container Engine cluster of FTP servers. Save the data to a Multi-Regional bucket. Run the ETL process  using data in the bucket",
+        "B": "Use multiple Google Container Engine clusters running FTP servers located in different regions. Save the data to Multi-  Regional buckets in US, EU, and Asia. Run the ETL process using the data in the bucket",
+        "C": "Directly transfer the files to different Google Cloud Multi-Regional Storage bucket locations in US, EU, and Asia using  Google APIs over HTTP(S). Run the ETL process using the data in the bucket",
+        "D": "Directly transfer the files to a different Google Cloud Regional Storage bucket location in US, EU, and Asia using Google  APIs over HTTP(S). Run the ETL process to retrieve the data from each Regional bucket  "
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "8",
+      "question_description": "TerramEarth's 20 million vehicles are scattered around the world. Based on the vehicle's location, its telemetry data is stored  in a Google Cloud Storage (GCS) regional bucket (US, Europe, or Asia). The CTO has asked you to run a report on the raw  telemetry data to determine why vehicles are breaking down after 100 K miles. You want to run this job on all the data.   What is the most cost-effective way to run this job?",
+      "options": {
+        "A": "Move all the data into 1 zone, then launch a Cloud Dataproc cluster to run the job",
+        "B": "Move all the data into 1 region, then launch a Google Cloud Dataproc cluster to run the job",
+        "C": "Launch a cluster in each region to preprocess and compress the raw data, then move the data into a multi-region bucket  and use a Dataproc cluster to finish the job",
+        "D": "Launch a cluster in each region to preprocess and compress the raw data, then move the data into a region bucket and  use a Cloud Dataproc cluster to finish the job  "
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "9",
+      "question_description": "TerramEarth has equipped all connected trucks with servers and sensors to collect telemetry data. Next year they want to use  the data to train machine learning models. They want to store this data in the cloud while reducing costs.   What should they do?",
+      "options": {
+        "A": "Have the vehicle's computer compress the data in hourly snapshots, and store it in a Google Cloud Storage (GCS)  Nearline bucket",
+        "B": "Push the telemetry data in real-time to a streaming dataflow job that compresses the data, and store it in Google  BigQuery",
+        "C": "Push the telemetry data in real-time to a streaming dataflow job that compresses the data, and store it in Cloud Bigtable",
+        "D": "Have the vehicle's computer compress the data in hourly snapshots, and store it in a GCS Coldline bucket  "
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "10",
+      "question_description": "Your agricultural division is experimenting with fully autonomous vehicles. You want your architecture to promote strong  security during vehicle operation.   Which two architectures should you consider? (Choose two.)",
+      "options": {
+        "A": "Treat every micro service call between modules on the vehicle as untrusted.  ",
+        "B": "Require IPv6 for connectivity to ensure a secure address space.",
+        "C": "Use a trusted platform module (TPM) and verify firmware and binaries on boot.  ",
+        "D": "Use a functional programming language to isolate code execution cycles.",
+        "E": "Use multiple connectivity subsystems for redundancy.",
+        "F": "Enclose the vehicle's drive electronics in a Faraday cage to isolate chips."
+      },
+      "correct_answer": [
+        "A",
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "11",
+      "question_description": "Operational parameters such as oil pressure are adjustable on each of TerramEarth's vehicles to increase their efficiency,  depending on their environmental conditions. Your primary goal is to increase the operating efficiency of all 20 million cellular  and unconnected vehicles in the field.   How can you accomplish this goal?",
+      "options": {
+        "A": "Have you engineers inspect the data for patterns, and then create an algorithm with rules that make operational  adjustments automatically",
+        "B": "Capture all operating data, train machine learning models that identify ideal operations, and run locally to make  operational adjustments automatically  ",
+        "C": "Implement a Google Cloud Dataflow streaming job with a sliding window, and use Google Cloud Messaging (GCM) to  make operational adjustments automatically",
+        "D": "Capture all operating data, train machine learning models that identify ideal operations, and host in Google Cloud  Machine Learning (ML) Platform to make operational adjustments automatically"
+      },
+      "correct_answer": [
+        "B"
+      ]
+    }
+  ]
+]

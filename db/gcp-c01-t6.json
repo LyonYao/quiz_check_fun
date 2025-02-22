@@ -1,0 +1,111 @@
+[
+  [
+    {
+      "question_number": "1",
+      "question_description": "For this question, refer to the Mountkirk Games case study. Mountkirk Games wants to migrate from their current analytics and  statistics reporting model to one that meets their technical requirements on Google Cloud Platform.   Which two steps should be part of their migration plan? (Choose two.)",
+      "options": {
+        "A": "Evaluate the impact of migrating their current batch ETL code to Cloud Dataflow.  ",
+        "B": "Write a schema migration plan to denormalize data for better performance in BigQuery.  ",
+        "C": "Draw an architecture diagram that shows how to move from a single MySQL database to a MySQL cluster.",
+        "D": "Load 10 TB of analytics data from a previous game into a Cloud SQL instance, and run test queries against the full  dataset to confirm that they complete successfully.",
+        "E": "Integrate Cloud Armor to defend against possible SQL injection attacks in analytics files uploaded to Cloud Storage."
+      },
+      "correct_answer": [
+        "A",
+        "B"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "2",
+      "question_description": "For this question, refer to the Mountkirk Games case study. You need to analyze and define the technical architecture for the  compute workloads for your company, Mountkirk Games. Considering the Mountkirk Games business and technical  requirements, what should you do?",
+      "options": {
+        "A": "Create network load balancers. Use preemptible Compute Engine instances.",
+        "B": "Create network load balancers. Use non-preemptible Compute Engine instances.",
+        "C": "Create a global load balancer with managed instance groups and autoscaling policies. Use preemptible Compute Engine  instances.",
+        "D": "Create a global load balancer with managed instance groups and autoscaling policies. Use non-preemptible Compute  Engine instances.  "
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "3",
+      "question_description": "For this question, refer to the Mountkirk Games case study. Mountkirk Games wants to design their solution for the future in  order to take advantage of cloud and technology improvements as they become available. Which two steps should they take?  (Choose two.)",
+      "options": {
+        "A": "Store as much analytics and game activity data as financially feasible today so it can be used to train machine learning  models to predict user behavior in the future.  ",
+        "B": "Begin packaging their game backend artifacts in container images and running them on Google   Kubernetes Engine to  improve the ability to scale up or down based on game activity.  ",
+        "C": "Set up a CI/CD pipeline using Jenkins and Spinnaker to automate canary deployments and improve development  velocity.",
+        "D": "Adopt a schema versioning tool to reduce downtime when adding new game features that require storing additional  player data in the database.",
+        "E": "Implement a weekly rolling maintenance process for the Linux virtual machines so they can apply critical kernel patches  and package updates and reduce the risk of 0-day vulnerabilities."
+      },
+      "correct_answer": [
+        "A",
+        "B"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "4",
+      "question_description": "For this question, refer to the Mountkirk Games case study. Mountkirk Games wants you to design a way to test the analytics  platform's resilience to changes in mobile network latency. What should you do?",
+      "options": {
+        "A": "Deploy failure injection software to the game analytics platform that can inject additional latency to mobile client  analytics traffic.  ",
+        "B": "Build a test client that can be run from a mobile phone emulator on a Compute Engine virtual machine, and run multiple  copies in Google Cloud Platform regions all over the world to generate realistic traffic.",
+        "C": "Add the ability to introduce a random amount of delay before beginning to process analytics files uploaded from mobile  devices.",
+        "D": "Create an opt-in beta of the game that runs on players' mobile devices and collects response times from analytics  endpoints running in Google Cloud Platform regions all over the world."
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "5",
+      "question_description": "For this question, refer to the Mountkirk Games case study. You need to analyze and define the technical architecture for the  database workloads for your company, Mountkirk Games. Considering the business and technical requirements, what should  you do?",
+      "options": {
+        "A": "Use Cloud SQL for time series data, and use Cloud Bigtable for historical data queries.",
+        "B": "Use Cloud SQL to replace MySQL, and use Cloud Spanner for historical data queries.",
+        "C": "Use Cloud Bigtable to replace MySQL, and use BigQuery for historical data queries.",
+        "D": "Use Cloud Bigtable for time series data, use Cloud Spanner for transactional data, and use BigQuery for historical data  queries.  "
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "6",
+      "question_description": "For this question, refer to the Mountkirk Games case study. Which managed storage option meets Mountkirk's technical  requirement for storing game activity in a time series database service?",
+      "options": {
+        "A": "Cloud Bigtable  ",
+        "B": "Cloud Spanner",
+        "C": "BigQuery",
+        "D": "Cloud Datastore"
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "7",
+      "question_description": "For this question, refer to the Mountkirk Games case study. You are in charge of the new Game Backend Platform architecture.  The game communicates with the backend over a REST API.   You want to follow Google-recommended practices. How should you design the backend?",
+      "options": {
+        "A": "Create an instance template for the backend. For every region, deploy it on a multi-zone managed instance group. Use  an L4 load balancer.",
+        "B": "Create an instance template for the backend. For every region, deploy it on a single-zone managed instance group. Use  an L4 load balancer.",
+        "C": "Create an instance template for the backend. For every region, deploy it on a multi-zone managed instance group. Use  an L7 load balancer.  ",
+        "D": "Create an instance template for the backend. For every region, deploy it on a single-zone managed instance group. Use  an L7 load balancer."
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ]
+]

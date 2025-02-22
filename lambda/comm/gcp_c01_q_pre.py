@@ -6,15 +6,15 @@ from db_connect import DatabaseConnection
 import json
 
 
-with open('d:/lyon_study/quiz_check/quiz_check_fun/db/gcp-c01.json','r',encoding='utf-8') as file:
+with open('d:/lyon_study/quiz_check/quiz_check_fun/db/gcp-c01-t12.json','r',encoding='utf-8') as file:
     content = file.read()
 
-Q_PREFIX='GCP_C01_Q_T1'
+Q_PREFIX='GCP_C01_Q_T12'
 db = DatabaseConnection()
 db.connect()
 
-db.execute_delete('delete from  quiz.check_question where id like %s ',(f'{Q_PREFIX}%',))
-db.execute_delete('delete from  quiz.check_refer where question_id like %s ',(f'{Q_PREFIX}%',))
+# db.execute_delete('delete from  quiz.check_question where id like %s ',(f'{Q_PREFIX}%',))
+# db.execute_delete('delete from  quiz.check_refer where question_id like %s ',(f'{Q_PREFIX}%',))
 
 ques= json.loads(content)
 cnt = 0

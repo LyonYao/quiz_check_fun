@@ -1,0 +1,92 @@
+[
+  [
+    {
+      "question_number": "1",
+      "question_description": "For this question, refer to the TerramEarth case study. To be compliant with European GDPR regulation, TerramEarth is required  to delete data generated from its   European customers after a period of 36 months when it contains personal data. In the new architecture, this data will be  stored in both Cloud Storage and   BigQuery. What should you do?",
+      "options": {
+        "A": "Create a BigQuery table for the European data, and set the table retention period to 36 months. For Cloud Storage, use  gsutil to enable lifecycle management using a DELETE action with an Age condition of 36 months.",
+        "B": "Create a BigQuery table for the European data, and set the table retention period to 36 months. For Cloud Storage, use  gsutil to create a SetStorageClass to NONE action when with an Age condition of 36 months.",
+        "C": "Create a BigQuery time-partitioned table for the European data, and set the partition expiration period to 36 months. For  Cloud Storage, use gsutil to enable lifecycle management using a DELETE action with an Age condition of 36 months. ",
+        "D": "Create a BigQuery time-partitioned table for the European data, and set the partition expiration   period to 36 months. For  Cloud Storage, use gsutil to create a SetStorageClass to NONE action with an Age condition of 36 months."
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "2",
+      "question_description": "For this question, refer to the TerramEarth case study. TerramEarth has decided to store data files in Cloud Storage. You need  to configure Cloud Storage lifecycle rule to store 1 year of data and minimize file storage cost.   Which two actions should you take?",
+      "options": {
+        "A": "Create a Cloud Storage lifecycle rule with Age:   ג  €30  ג   ,€Storage Class:   ג  €Standard  ג   ,€and Action:   ג  €Set to Coldline  ג  ,€  and create a second GCS life-cycle rule with Age:   ג  €365  ג   ,€Storage Class:   ג  €Coldline  ג   ,€and Action:   ג  €Delete  ג   .€ ",
+        "B": "Create a Cloud Storage lifecycle rule with Age:   ג  €30  ג   ,€Storage Class:   ג  €Coldline  ג   ,€and Action:   ג  €Set to Nearline  ג  ,€  and create a second GCS life-cycle rule with Age:   ג  €91  ג   ,€Storage Class:   ג  €Coldline  ג   ,€and Action:   ג  €Set to Nearline  ג  .€",
+        "C": "Create a Cloud Storage lifecycle rule with Age:   ג  €90  ג   ,€Storage Class:   ג  €Standard  ג   ,€and Action:   ג  €Set to Nearline  ג  ,€  and create a second GCS life-cycle rule with Age:   ג  €91  ג   ,€Storage Class:   ג  €Nearline  ג   ,€and Action:   ג  €Set to Coldline  ג  .€",
+        "D": "Create a Cloud Storage lifecycle rule with Age:   ג  €30  ג   ,€Storage Class:   ג  €Standard  ג   ,€and Action:   ג  €Set to Coldline  ג  ,€  and create a second GCS life-cycle rule with Age:   ג  €365  ג   ,€Storage Class:   ג  €Nearline  ג   ,€and Action:   ג  €Delete  ג  .€"
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "3",
+      "question_description": "For this question, refer to the TerramEarth case study. You need to implement a reliable, scalable GCP solution for the data  warehouse for your company,   TerramEarth.   Considering the TerramEarth business and technical requirements, what should you do?",
+      "options": {
+        "A": "Replace the existing data warehouse with BigQuery. Use table partitioning.  ",
+        "B": "Replace the existing data warehouse with a Compute Engine instance with 96 CPUs.",
+        "C": "Replace the existing data warehouse with BigQuery. Use federated data sources.",
+        "D": "Replace the existing data warehouse with a Compute Engine instance with 96 CPUs. Add an additional Compute Engine  preemptible instance with 32 CPUs."
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "4",
+      "question_description": "For this question, refer to the TerramEarth case study. A new architecture that writes all incoming data to BigQuery has been  introduced. You notice that the data is dirty, and want to ensure data quality on an automated daily basis while managing cost.  What should you do?",
+      "options": {
+        "A": "Set up a streaming Cloud Dataflow job, receiving data by the ingestion process. Clean the data in a Cloud Dataflow  pipeline.",
+        "B": "Create a Cloud Function that reads data from BigQuery and cleans it. Trigger the Cloud Function from a Compute Engine  instance.",
+        "C": "Create a SQL statement on the data in BigQuery, and save it as a view. Run the view daily, and save the result to a new  table.",
+        "D": "Use Cloud Dataprep and configure the BigQuery tables as the source. Schedule a daily job to clean the data.  "
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "5",
+      "question_description": "For this question, refer to the TerramEarth case study. Considering the technical requirements, how should you reduce the  unplanned vehicle downtime in GCP?",
+      "options": {
+        "A": "Use BigQuery as the data warehouse. Connect all vehicles to the network and stream data into BigQuery using Cloud  Pub/Sub and Cloud Dataflow. Use Google Data Studio for analysis and reporting.  ",
+        "B": "Use BigQuery as the data warehouse. Connect all vehicles to the network and upload gzip files to a Multi-Regional Cloud  Storage bucket using gcloud. Use Google Data Studio for analysis and reporting.",
+        "C": "Use Cloud Dataproc Hive as the data warehouse. Upload gzip files to a Multi-Regional Cloud Storage bucket. Upload this  data into BigQuery using gcloud. Use Google Data Studio for analysis and reporting.",
+        "D": "Use Cloud Dataproc Hive as the data warehouse. Directly stream data into partitioned Hive tables. Use Pig scripts to  analyze data."
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "6",
+      "question_description": "For this question, refer to the TerramEarth case study. You are asked to design a new architecture for the ingestion of the data  of the 200,000 vehicles that are connected to a cellular network. You want to follow Google-recommended practices.   Considering the technical requirements, which components should you use for the ingestion of the data?",
+      "options": {
+        "A": "Google Kubernetes Engine with an SSL Ingress",
+        "B": "Cloud IoT Core with public/private key pairs  ",
+        "C": "Compute Engine with project-wide SSH keys",
+        "D": "Compute Engine with specific SSH keys"
+      },
+      "correct_answer": [
+        "B"
+      ]
+    }
+  ]
+]

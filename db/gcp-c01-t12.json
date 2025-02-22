@@ -1,0 +1,92 @@
+[
+  [
+    {
+      "question_number": "1",
+      "question_description": "For this question, refer to the Dress4Win case study. Dress4Win is expected to grow to 10 times its size in 1 year with a  corresponding growth in data and traffic that mirrors the existing patterns of usage. The CIO has set the target of migrating  production infrastructure to the cloud within the next 6 months. How will you configure the solution to scale for this growth  without making major application changes and still maximize the ROI?",
+      "options": {
+        "A": "Migrate the web application layer to App Engine, and MySQL to Cloud Datastore, and NAS to Cloud Storage. Deploy  RabbitMQ, and deploy Hadoop servers using Deployment Manager.",
+        "B": "Migrate RabbitMQ to Cloud Pub/Sub, Hadoop to BigQuery, and NAS to Compute Engine with Persistent Disk storage.  Deploy Tomcat, and deploy Nginx using Deployment Manager.",
+        "C": "Implement managed instance groups for Tomcat and Nginx. Migrate MySQL to Cloud SQL, RabbitMQ to Cloud Pub/Sub,  Hadoop to Cloud Dataproc, and NAS to Compute Engine with Persistent Disk storage.",
+        "D": "Implement managed instance groups for the Tomcat and Nginx. Migrate MySQL to Cloud SQL, RabbitMQ to Cloud  Pub/Sub, Hadoop to Cloud Dataproc, and NAS to Cloud Storage.   Most Voted"
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "2",
+      "question_description": "For this question, refer to the Dress4Win case study. Considering the given business requirements, how would you automate  the deployment of web and transactional data layers?",
+      "options": {
+        "A": "Deploy Nginx and Tomcat using Cloud Deployment Manager to Compute Engine. Deploy a Cloud SQL server to replace  MySQL. Deploy Jenkins using Cloud Deployment Manager.   Most Voted",
+        "B": "Deploy Nginx and Tomcat using Cloud Launcher. Deploy a MySQL server using Cloud Launcher. Deploy Jenkins to  Compute Engine using Cloud Deployment Manager scripts.",
+        "C": "Migrate Nginx and Tomcat to App Engine. Deploy a Cloud Datastore server to replace the MySQL server in a high-  availability configuration. Deploy Jenkins to Compute Engine using Cloud Launcher.",
+        "D": "Migrate Nginx and Tomcat to App Engine. Deploy a MySQL server using Cloud Launcher. Deploy Jenkins to Compute  Engine using Cloud Launcher."
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "3",
+      "question_description": "For this question, refer to the Dress4Win case study. Which of the compute services should be migrated as-is and would still be  an optimized architecture for performance in the cloud?",
+      "options": {
+        "A": "Web applications deployed using App Engine standard environment",
+        "B": "RabbitMQ deployed using an unmanaged instance group",
+        "C": "Hadoop/Spark deployed using Cloud Dataproc Regional in High Availability mode   Most Voted",
+        "D": "Jenkins, monitoring, bastion hosts, security scanners services deployed on custom machine types"
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "4",
+      "question_description": "For this question, refer to the Dress4Win case study. To be legally compliant during an audit, Dress4Win must be able to give  insights in all administrative actions that modify the configuration or metadata of resources on Google Cloud.   What should you do?",
+      "options": {
+        "A": "Use Stackdriver Trace to create a Trace list analysis.",
+        "B": "Use Stackdriver Monitoring to create a dashboard on the project's activity.",
+        "C": "Enable Cloud Identity-Aware Proxy in all projects, and add the group of Administrators as a member.",
+        "D": "Use the Activity page in the GCP Console and Stackdriver Logging to provide the required insight.   Most Voted"
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "5",
+      "question_description": "For this question, refer to the Dress4Win case study. You are responsible for the security of data stored in Cloud Storage for  your company, Dress4Win. You have already created a set of Google Groups and assigned the appropriate users to those  groups. You should use Google best practices and implement the simplest design to meet the requirements.   Considering Dress4Win's business and technical requirements, what should you do?",
+      "options": {
+        "A": "Assign custom IAM roles to the Google Groups you created in order to enforce security requirements. Encrypt data with a  customer-supplied encryption key when storing files in Cloud Storage.",
+        "B": "Assign custom IAM roles to the Google Groups you created in order to enforce security requirements. Enable default  storage encryption before storing files in Cloud Storage.",
+        "C": "Assign predefined IAM roles to the Google Groups you created in order to enforce security requirements. Utilize Google's  default encryption at rest when storing files in Cloud Storage.   Most Voted",
+        "D": "Assign predefined IAM roles to the Google Groups you created in order to enforce security requirements. Ensure that the  default Cloud KMS key is set before storing files in Cloud Storage."
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "6",
+      "question_description": "For this question, refer to the Dress4Win case study. You want to ensure that your on-premises architecture meets business  requirements before you migrate your solution.   What change in the on-premises architecture should you make?",
+      "options": {
+        "A": "Replace RabbitMQ with Google Pub/Sub.",
+        "B": "Downgrade MySQL to v5.7, which is supported by Cloud SQL for MySQL.",
+        "C": "Resize compute resources to match predefined Compute Engine machine types.",
+        "D": "Containerize the micro-services and host them in Google Kubernetes Engine.   Most Voted"
+      },
+      "correct_answer": [
+        "D"
+      ]
+    }
+  ]
+]

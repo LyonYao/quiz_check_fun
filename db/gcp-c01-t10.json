@@ -1,0 +1,94 @@
+[
+  [
+    {
+      "question_number": "1",
+      "question_description": "For this question, refer to the TerramEarth case study. You start to build a new application that uses a few Cloud Functions for  the backend. One use case requires a Cloud Function func_display to invoke another Cloud Function func_query. You want  func_query only to accept invocations from func_display. You also want to follow Google's recommended best practices. What  should you do?",
+      "options": {
+        "A": "Create a token and pass it in as an environment variable to func_display. When invoking func_query, include the token in  the request. Pass the same token to func_query and reject the invocation if the tokens are different.",
+        "B": "Make func_query 'Require authentication.' Create a unique service account and associate it to func_display. Grant the  service account invoker role for func_query. Create an id token in func_display and include the token to the request when  invoking func_query.  ",
+        "C": "Make func_query 'Require authentication' and only accept internal traffic. Create those two functions in the same VPC.  Create an ingress firewall rule for func_query to only allow traffic from func_display.",
+        "D": "Create those two functions in the same project and VPC. Make func_query only accept internal traffic. Create an ingress  firewall for func_query to only allow traffic from func_display. Also, make sure both functions use the same service account."
+      },
+      "correct_answer": [
+        "B"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "2",
+      "question_description": "For this question, refer to the TerramEarth case study. You have broken down a legacy monolithic application into a few  containerized RESTful microservices.   You want to run those microservices on Cloud Run. You also want to make sure the services are highly available with low  latency to your customers. What should you do?",
+      "options": {
+        "A": "Deploy Cloud Run services to multiple availability zones. Create Cloud Endpoints that point to the services. Create a  global HTTP(S) Load Balancing instance and attach the Cloud Endpoints to its backend.",
+        "B": "Deploy Cloud Run services to multiple regions. Create serverless network endpoint groups pointing to the services. Add  the serverless NEGs to a backend service that is used by a global HTTP(S) Load Balancing instance.  ",
+        "C": "Deploy Cloud Run services to multiple regions. In Cloud DNS, create a latency-based DNS name that points to the  services.",
+        "D": "Deploy Cloud Run services to multiple availability zones. Create a TCP/IP global load balancer. Add the Cloud Run  Endpoints to its backend service."
+      },
+      "correct_answer": [
+        "B"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "3",
+      "question_description": "For this question, refer to the TerramEarth case study. You are migrating a Linux-based application from your private data  center to Google Cloud. The   TerramEarth security team sent you several recent Linux vulnerabilities published by Common Vulnerabilities and Exposures  (CVE). You need assistance in understanding how these vulnerabilities could impact your migration. What should you do?  (Choose two.)",
+      "options": {
+        "A": "Open a support case regarding the CVE and chat with the support engineer.  ",
+        "B": "Read the CVEs from the Google Cloud Status Dashboard to understand the impact.",
+        "C": "Read the CVEs from the Google Cloud Platform Security Bulletins to understand the impact.  ",
+        "D": "Post a question regarding the CVE in Stack Overflow to get an explanation.",
+        "E": "Post a question regarding the CVE in a Google Cloud discussion group to get an explanation."
+      },
+      "correct_answer": [
+        "A",
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "4",
+      "question_description": "For this question, refer to the TerramEarth case study. TerramEarth has a legacy web application that you cannot migrate to  cloud. However, you still want to build a cloud-native way to monitor the application. If the application goes down, you want the  URL to point to a \"Site is unavailable\" page as soon as possible. You also want your Ops team to receive a notification for the  issue. You need to build a reliable solution for minimum cost. What should you do?",
+      "options": {
+        "A": "Create a scheduled job in Cloud Run to invoke a container every minute. The container will check the application URL. If  the application is down, switch the URL to the \"Site is unavailable\" page, and notify the Ops team.",
+        "B": "Create a cron job on a Compute Engine VM that runs every minute. The cron job invokes a Python program to check the  application URL. If the application is down, switch the URL to the \"Site is unavailable\" page, and notify the Ops team.",
+        "C": "Create a Cloud Monitoring uptime check to validate the application URL. If it fails, put a message in a Pub/Sub queue  that triggers a Cloud Function to switch the URL to the \"Site is unavailable\" page, and notify the Ops team.  ",
+        "D": "Use Cloud Error Reporting to check the application URL. If the application is down, switch the URL to the \"Site is  unavailable\" page, and notify the Ops team."
+      },
+      "correct_answer": [
+        "C"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "5",
+      "question_description": "For this question, refer to the TerramEarth case study. You are building a microservice-based application for TerramEarth. The  application is based on Docker containers. You want to follow Google-recommended practices to build the application  continuously and store the build artifacts. What should you do?",
+      "options": {
+        "A": "Configure a trigger in Cloud Build for new source changes. Invoke Cloud Build to build container images for each  microservice, and tag them using the code commit hash. Push the images to the Container Registry.  ",
+        "B": "Configure a trigger in Cloud Build for new source changes. The trigger invokes build jobs and build container images for  the microservices. Tag the images with a version number, and push them to Cloud Storage.",
+        "C": "Create a Scheduler job to check the repo every minute. For any new change, invoke Cloud Build to build container  images for the microservices. Tag the images using the current timestamp, and push them to the Container Registry.",
+        "D": "Configure a trigger in Cloud Build for new source changes. Invoke Cloud Build to build one container image, and tag the  image with the label 'latest.' Push the image to the Container Registry."
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ],
+  [
+    {
+      "question_number": "6",
+      "question_description": "For this question, refer to the TerramEarth case study. TerramEarth has about 1 petabyte (PB) of vehicle testing data in a  private data center. You want to move the data to Cloud Storage for your machine learning team. Currently, a 1-Gbps  interconnect link is available for you. The machine learning team wants to start using the data in a month. What should you  do?",
+      "options": {
+        "A": "Request Transfer Appliances from Google Cloud, export the data to appliances, and return the appliances to Google  Cloud.  ",
+        "B": "Configure the Storage Transfer service from Google Cloud to send the data from your data center to Cloud Storage.",
+        "C": "Make sure there are no other users consuming the 1Gbps link, and use multi-thread transfer to upload the data to Cloud  Storage.",
+        "D": "Export files to an encrypted USB device, send the device to Google Cloud, and request an import of the data to Cloud  Storage."
+      },
+      "correct_answer": [
+        "A"
+      ]
+    }
+  ]
+]

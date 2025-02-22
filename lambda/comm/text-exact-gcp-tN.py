@@ -2,7 +2,7 @@ import re
 import json
 def extract_questions_and_answers(text):
     # 定义正则表达式模式来匹配从 "Topic 1 Question" 到 "Correct Answer:" 的内容
-    pattern = re.compile(r"(Topic\s+5\s+Question\s+#\d+[\s\S]*?Correct Answer:\s*[A-Z]+(?:, [A-Z]+)*)", re.DOTALL)
+    pattern = re.compile(r"(Topic\s+12\s+Question\s+#\d+[\s\S]*?Correct Answer:\s*[A-Z]+(?:, [A-Z]+)*)", re.DOTALL)
     
  
 
@@ -15,7 +15,7 @@ def extract_questions_and_answers(text):
         question_data = {}
         
         # 提取问题编号
-        question_number = re.search(r'Topic\s+5\s+Question\s+#(\d+)', match).group(1)
+        question_number = re.search(r'Topic\s+12\s+Question\s+#(\d+)', match).group(1)
         question_data['question_number'] = question_number
         
         # 提取问题描述
@@ -35,7 +35,7 @@ def extract_questions_and_answers(text):
     return questions
 kind= 'gcp'
 def process_questions():
-    with open('d:/lyon_study/quiz_check/quiz_check_fun/db/%s-c01-clean-t5.txt' %kind, 'r', encoding='utf-8') as file:
+    with open('d:/lyon_study/quiz_check/quiz_check_fun/db/%s-c01-clean-t12.txt' %kind, 'r', encoding='utf-8') as file:
         content = file.read()
     
     qs= json.loads(content)
@@ -47,5 +47,5 @@ def process_questions():
  
 structured_data = process_questions()
 
-with open('d:/lyon_study/quiz_check/quiz_check_fun/db/%s-c01-t5.json' % kind,'w',encoding='utf-8') as f:
+with open('d:/lyon_study/quiz_check/quiz_check_fun/db/%s-c01-t12.json' % kind,'w',encoding='utf-8') as f:
     f.write(json.dumps(structured_data, indent=2, ensure_ascii=False))

@@ -4,8 +4,8 @@
       "question_number": "1",
       "question_description": "For this question, refer to the EHR Healthcare case study. You are responsible for ensuring that EHR's use of Google Cloud will  pass an upcoming privacy compliance audit. What should you do? (Choose two.)",
       "options": {
-        "A": "Verify EHR's product usage against the list of compliant products on the Google Cloud compliance page.   Most Voted",
-        "B": "Advise EHR to execute a Business Associate Agreement (BAA) with Google Cloud.   Most Voted",
+        "A": "Verify EHR's product usage against the list of compliant products on the Google Cloud compliance page.",
+        "B": "Advise EHR to execute a Business Associate Agreement (BAA) with Google Cloud.",
         "C": "Use Firebase Authentication for EHR's user facing applications.",
         "D": "Implement Prometheus to detect and prevent security breaches on EHR's web-based applications.",
         "E": "Use GKE private clusters for all Kubernetes workloads."
@@ -21,10 +21,10 @@
       "question_number": "2",
       "question_description": "For this question, refer to the EHR Healthcare case study. You need to define the technical architecture for securely deploying  workloads to Google Cloud. You also need to ensure that only verified containers are deployed using Google Cloud services.  What should you do? (Choose two.)",
       "options": {
-        "A": "Enable Binary Authorization on GKE, and sign containers as part of a CI/CD pipeline.   Most Voted",
+        "A": "Enable Binary Authorization on GKE, and sign containers as part of a CI/CD pipeline.",
         "B": "Configure Jenkins to utilize Kritis to cryptographically sign a container as part of a CI/CD pipeline.",
         "C": "Configure Container Registry to only allow trusted service accounts to create and deploy containers from the registry.",
-        "D": "Configure Container Registry to use vulnerability scanning to confirm that there are no vulnerabilities before deploying  the workload.   Most Voted"
+        "D": "Configure Container Registry to use vulnerability scanning to confirm that there are no vulnerabilities before deploying  the workload."
       },
       "correct_answer": [
         "A",
@@ -37,7 +37,7 @@
       "question_number": "3",
       "question_description": "You need to upgrade the EHR connection to comply with their requirements. The new connection design must support  business-critical needs and meet the same network and security policy requirements. What should you do?",
       "options": {
-        "A": "Add a new Dedicated Interconnect connection.   Most Voted",
+        "A": "Add a new Dedicated Interconnect connection.",
         "B": "Upgrade the bandwidth on the Dedicated Interconnect connection to 100 G.",
         "C": "Add three new Cloud VPN connections.",
         "D": "Add a new Carrier Peering connection."
@@ -55,7 +55,7 @@
         "A": "Configure two Partner Interconnect connections in one metro (City), and make sure the Interconnect connections are  placed in different metro zones.",
         "B": "Configure two VPN connections from on-premises to Google Cloud, and make sure the VPN devices on-premises are in  separate racks.",
         "C": "Configure Direct Peering between EHR Healthcare and Google Cloud, and make sure you are peering at least two Google  locations.",
-        "D": "Configure two Dedicated Interconnect connections in one metro (City) and two connections in another metro, and make  sure the Interconnect connections are placed in different metro zones.   Most Voted"
+        "D": "Configure two Dedicated Interconnect connections in one metro (City) and two connections in another metro, and make  sure the Interconnect connections are placed in different metro zones."
       },
       "correct_answer": [
         "D"
@@ -69,7 +69,7 @@
       "options": {
         "A": "Increase the Pub/Sub Total Timeout retry value.",
         "B": "Move from a Pub/Sub subscriber pull model to a push model.",
-        "C": "Turn off Pub/Sub message batching.   Most Voted",
+        "C": "Turn off Pub/Sub message batching.",
         "D": "Create a backup Pub/Sub message queue."
       },
       "correct_answer": [
@@ -82,7 +82,7 @@
       "question_number": "6",
       "question_description": "For this question, refer to the EHR Healthcare case study. In the past, configuration errors put public IP addresses on backend  servers that should not have been accessible from the Internet. You need to ensure that no one can put external IP addresses  on backend Compute Engine instances and that external IP addresses can only be configured on frontend Compute Engine  instances. What should you do?",
       "options": {
-        "A": "Create an Organizational Policy with a constraint to allow external IP addresses only on the frontend Compute Engine  instances.   Most Voted",
+        "A": "Create an Organizational Policy with a constraint to allow external IP addresses only on the frontend Compute Engine  instances.",
         "B": "Revoke the compute.networkAdmin role from all users in the project with front end instances.",
         "C": "Create an Identity and Access Management (IAM) policy that maps the IT staff to the compute.networkAdmin role for the  organization.",
         "D": "Create a custom Identity and Access Management (IAM) role named GCE_FRONTEND with the compute.addresses.create  permission."
@@ -97,7 +97,7 @@
       "question_number": "7",
       "question_description": "For this question, refer to the EHR Healthcare case study. You are responsible for designing the Google Cloud network  architecture for Google Kubernetes   Engine. You want to follow Google best practices. Considering the EHR Healthcare business and technical requirements, what  should you do to reduce the attack surface?",
       "options": {
-        "A": "Use a private cluster with a private endpoint with master authorized networks configured.   Most Voted",
+        "A": "Use a private cluster with a private endpoint with master authorized networks configured.",
         "B": "Use a public cluster with firewall rules and Virtual Private Cloud (VPC) routes.",
         "C": "Use a private cluster with a public endpoint with master authorized networks configured.",
         "D": "Use a public cluster with master authorized networks enabled and firewall rules."
